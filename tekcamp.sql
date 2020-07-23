@@ -18,6 +18,7 @@ truncate table tc1_gabechavez.tekcampers;
 insert into tc1_gabechavez.tekcampers select * from students.tekcamp01;
 select * from tc1_gabechavez.tekcampers;
 
+-- I then used Workbench to manually assign the primary key before adding student
 -- You should see that there are a number of students that are missing from the original list of students in the students database. There are a total of 35 registered students @ TEKcamp. Find out the missing students and add them to the tekcampers table. Find out the necessary information missing from those students and add them to your tekcampers table.
 INSERT INTO tekcampers(first_name, last_name, gender) VALUES 
 ('John', 'Bozarov', 'M'), ('Devon', 'Brewster', 'M'), ('Justin', 'Cheng', 'M'), ('Cody', 'Clark', 'M'), 
@@ -26,6 +27,7 @@ INSERT INTO tekcampers(first_name, last_name, gender) VALUES
 select * from tc1_gabechavez.tekcampers;
 
 -- There may be records of students that are not part of TEKcamp or are no longer part of TEKcamp. Remove those records from your tekcampers table.
+select 
 
 -- You may have noticed that the data in the table is not quite accurate. Put the gender data in the appropriate column, and fix any incorrect entries. For the education field, reach out to your fellow tekcampers to find their educational background and update your table accordingly. If they do not give permission or don't feel comfortable sharing their educational background, put NULL as the value for that particular record.
 
