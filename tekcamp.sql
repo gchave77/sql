@@ -2,6 +2,7 @@
 -- the original sql database name is students, the tables are tekcamp01 and tekcampers
 
 -- Create your own students database. Name the database in the following format : tc1-<firstname-lastname>-.
+-- ONE-TIME RUN!!!
 show databases;
 -- delete tc1_gabechavez.tekcampers from tc1_gabechavez;
 CREATE DATABASE IF NOT EXISTS tc1_gabechavez;
@@ -164,7 +165,7 @@ UPDATE tekcampers SET bootcamp = "Trilogy Education" WHERE first_name = 'Justin'
 SELECT * FROM tc1_gabechavez.tekcampers;
 
 -- Add the bootcamp field / column to your ta-<ta-name> table as well.
--- ALTER TABLE ta_emilios ADD bootcamp VARCHAR(20);
+ALTER TABLE ta_emilios ADD bootcamp VARCHAR(20);
 UPDATE ta_emilios INNER JOIN tekcampers ON ta_emilios.last_name = tekcampers.last_name 
 SET ta_emilios.bootcamp = tekcampers.bootcamp;
 
